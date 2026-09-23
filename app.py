@@ -29,7 +29,7 @@ if region_seleccionada != "Todas":
 else:
     df_filtrado = df
 
-max_dias = st.sidebar.slider("Máximo días de espera aceptables:", min_to=60, max_value=300, value=250, step=10)
+max_dias = st.sidebar.slider(max_dias = st.sidebar.slider("Máximo días de espera aceptables:", min_value=60, max_value=300, value=250, step=10))
 df_filtrado = df_filtrado[df_filtrado["Tiempo_Licencia_Dias"] <= max_dias]
 
 # 4. Tarjetas de Métricas Principales (KPIs arriba)
